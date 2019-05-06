@@ -22,7 +22,7 @@ function displayRepositories()
       ' - <a href="#" data-repo="' + r.name +
       '" data-username="' + r.owner.login +
       '" onclick="getCommits(this)">Get Commits</a></li>' +
-      
+
       ', <a href="#" data-repo="' + r.name +
       '" data-username="' + r.owner.login +
       '" onclick="getCommits(this)">Get Commits</a></li>' +
