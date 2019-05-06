@@ -25,7 +25,7 @@ function displayRepositories()
 
       ', <a href="#" data-repo="' + r.name +
       '" data-username="' + r.owner.login +
-      '" onclick="getCommits(this)">Get Branches</a></li>'
+      '" onclick="getBranches(this)">Get Branches</a></li>'
   )
   .join('')}</ul>`;
   console.log(repoList);
