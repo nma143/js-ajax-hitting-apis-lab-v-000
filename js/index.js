@@ -29,14 +29,12 @@ function showRepositories()
 }
 function getCommits(el)
 {
-  const name = el.dataset.repo;
+  const repoName = el.dataset.repo;
   const username = el.dataset.username;
-
-  console.log(el.dataset)
 
   const req = new XMLHttpRequest();
   req.addEventListener('load', displayCommits);
-  req.open('GET', 'https://api.github.com/repos/'+username+'/' + name + '/commits');
+  req.open('GET', 'https://api.github.com/repos/'+username+'/' + repoName + '/commits');
   req.send();
 }
 function displayCommits() {
