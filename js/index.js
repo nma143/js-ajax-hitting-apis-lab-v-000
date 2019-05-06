@@ -57,7 +57,7 @@ function displayCommits() {
     .join('')}</ul>`;
   document.getElementById('details').innerHTML = commitsList;
 }
-function getBranches(el) 
+function getBranches(el)
 {
   const repoName = el.dataset.repo;
   const username = el.dataset.username;
