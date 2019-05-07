@@ -33,7 +33,7 @@ function displayRepositories()
 }
 function getCommits(el)
 {
-  const repoName = el.dataset.repo;
+  const repoName = el.dataset.repository;
   const username = el.dataset.username;
 
   console.log(repoName);
