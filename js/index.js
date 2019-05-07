@@ -19,7 +19,7 @@ function displayRepositories()
       r.name +
       ': <a href="'+r.html_url+'">'+r.html_url+'</a><br>' +
 
-      ' - <a href="#" data-repo="' + r.name +
+      ' - <a href="#" data-repository="' + r.name +
       '" data-username="' + r.owner.login +
       '" onclick="getCommits(this)">Get Commits</a>' +
 
