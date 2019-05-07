@@ -23,7 +23,7 @@ function displayRepositories()
       '" data-username="' + r.owner.login +
       '" onclick="getCommits(this)">Get Commits</a>' +
 
-      ', <a href="#" data-repo="' + r.name +
+      ', <a href="#" data-repository="' + r.name +
       '" data-username="' + r.owner.login +
       '" onclick="getBranches(this)">Get Branches</a></li>'
   )
@@ -62,7 +62,7 @@ function displayCommits() {
 }
 function getBranches(el)
 {
-  const repoName = el.dataset.repo;
+  const repoName = el.dataset.repository;
   const username = el.dataset.username;
 
 
